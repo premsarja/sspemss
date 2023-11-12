@@ -1,8 +1,8 @@
-- name: nginx
+- name: java
   hosts: all
   become: yes
   tasks:
-    - name: nginx
+    - name: java
       ansible.builtin.package:
-        name: nginx 
+        name: java 
         state: present     
