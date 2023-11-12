@@ -1,8 +1,8 @@
-- name: java
+- name: git
   hosts: all
   become: yes
   tasks:
-    - name: java
+    - name: git
       ansible.builtin.package:
-        name: java 
+        name: git 
         state: present     
